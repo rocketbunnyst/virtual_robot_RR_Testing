@@ -2,6 +2,17 @@
 
 New:  
 
+THIS VERSION IS INTENDED TO WORK WITH THE ROADRUNNER 1.0.0 QUICKSTART. It is not yet thoroughly 
+tested. The tuning parameters in MecanumDrive.java should be left exactly as-is. Start by trying 
+out the SplineTest opmode. Let us know if any issues. In order to use this, you will need the Kotlin 
+Standard library. Download the .jar file here:
+
+[Kotlin StdLib v2.0.20](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib/2.0.20)
+
+Add the .jar file to the lib directory. Then, File->Project Structure->Modules, select the TeamCode 
+module. Then, under the Dependencies tab, click '+', select 'Jars or Directories', navigate to and 
+select kotlin-stdlib-2.0.20.jar in your lib directory, then click 'Ok', 'Apply', then 'OK'.
+
 SparFunOTOS Odometry Sensor added. It is included in the robot configurations with Mecanum drivetrains,
 but can be easily added to other drivetrains.
 
